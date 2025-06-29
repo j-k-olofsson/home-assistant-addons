@@ -20,7 +20,7 @@ schema:
   disable_telemetry: bool
 
 map:
-  environment: true
+  - environment
 
 environment:
   CHROMA_SERVER_HTTP_PORT: "$port"
