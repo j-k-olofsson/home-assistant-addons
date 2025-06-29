@@ -1,7 +1,7 @@
 name: "ChromaDB"
-version: "0.5.5"
+version: "1.0.1"
 slug: "chromadb"
-description: "Official ChromaDB image with minimal config"
+description: "Official ChromaDB image with configurable options"
 startup: services
 boot: auto
 init: false
@@ -10,5 +10,11 @@ arch:
   - aarch64
 image: "chromadb/chroma"
 image_tag: "0.5.5"
-options: {}
-schema: {}
+
+options:
+  port: 8000
+  disable_telemetry: true
+
+schema:
+  port: int
+  disable_telemetry: bool
