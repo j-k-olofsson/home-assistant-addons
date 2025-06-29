@@ -1,5 +1,5 @@
 name: "ChromaDB"
-version: "1.0.3"
+version: "0.5.5"
 slug: "chromadb"
 description: "Official ChromaDB image with configurable environment variables"
 startup: services
