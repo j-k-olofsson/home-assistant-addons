@@ -1,0 +1,17 @@
+name: "ChromaDB"
+version: "0.4.0"
+slug: "chromadb"
+description: "Run ChromaDB locally with s6-overlay support"
+url: "https://github.com/j-k-olofsson/home-assistant-addons/tree/main/chromadb"
+startup: services
+boot: auto
+arch:
+  - amd64
+  - aarch64
+init: false
+hassio_api: false
+hassio_role: default
+homeassistant_api: false
+options: {}
+schema: {}
+image: "local/chromadb"
