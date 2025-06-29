@@ -1,18 +1,23 @@
 # Home Assistant Addons – ChromaDB
 
-Detta repository innehåller en Home Assistant-addon för att köra [ChromaDB](https://www.trychroma.com/) – en vektor-databas för LLM-applikationer som t.ex. CrewAI eller n8n-agentflöden.
+This repository contains a custom addon for [ChromaDB](https://www.trychroma.com/), a powerful open-source vector database designed for local use in LLM and AI agent applications.
 
-## 🔧 Funktioner
+## 🚀 Addon: ChromaDB
 
-- Körs som addon i Home Assistant
-- Bygger på officiell `chromadb/chroma:latest`
-- Stöd för konfig:
-  - `persist_directory` – var data sparas
-  - `allow_reset` – tillåter återställning av vektordatabasen
-  - `anonymized_telemetry` – styr om statistik skickas till Chroma
+Runs ChromaDB as a Home Assistant addon using the official Docker image `chromadb/chroma:latest`.
 
-## 📦 Installation
+### ✅ Features
 
-1. Gå till **Inställningar → Tillägg → Tilläggsförvaret** i Home Assistant.
-2. Klicka **“+ Lägg till”**
-3. Lägg till denna URL:
+- Local vector store for LLM applications (e.g. CrewAI, n8n agents)
+- Based on official image, minimal overhead
+- Configurable startup parameters:
+  - `persist_directory` – persistent storage location
+  - `allow_reset` – allow full database reset via API
+  - `anonymized_telemetry` – enable/disable usage statistics
+
+### 🔧 Example configuration
+
+```yaml
+persist_directory: "/data/chroma"
+allow_reset: false
+anonymized_telemetry: false
