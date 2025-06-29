@@ -1,8 +1,0 @@
-"addons": [
-  {
-    "name": "ChromaDB",
-    "slug": "chromadb",  // Måste matcha slug i config.yaml
-    "version": "0.3.0",
-    "url": "https://github.com/j-k-olofsson/home-assistant-addons"
-  }
-]
