@@ -8,6 +8,7 @@ init: false
 arch:
   - amd64
   - aarch64
-image: "chromadb/chroma:0.5.5"
+image: "chromadb/chroma"
+image_tag: "0.5.5"
 options: {}
 schema: {}
