@@ -1,6 +1,6 @@
 {
   "name": "ChromaDB",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "slug": "chromadb",
   "description": "Vector database for LLM apps",
   "arch": [
