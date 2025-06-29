@@ -20,7 +20,7 @@ schema:
   disable_telemetry: bool
 
 environment:
-  CHROMA_SERVER_HTTP_PORT: "${port}"
-  CHROMA_TELEMETRY_ENABLED: "$!disable_telemetry"
+  CHROMA_SERVER_HTTP_PORT: "{port}"
+  CHROMA_TELEMETRY_ENABLED: "{!disable_telemetry}"
 
 host_network: true
