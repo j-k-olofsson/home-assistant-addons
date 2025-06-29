@@ -1,14 +1,17 @@
 name: "ChromaDB"
-version: "0.5.5"
+version: "1.0.2"
 slug: "chromadb"
-description: "Official ChromaDB image with configurable environment variables"
+description: "Self-hosted ChromaDB server for AI agents and local vector storage"
 startup: services
 boot: auto
 init: false
+host_network: true
+hassio_api: false
+homeassistant_api: false
 arch:
   - amd64
   - aarch64
-image: "chromadb/chroma"
+image: "ghcr.io/chroma-core/chroma"
 image_tag: "0.5.5"
 
 options:
@@ -19,8 +22,13 @@ schema:
   port: int
   disable_telemetry: bool
 
-environment:
-  CHROMA_SERVER_HTTP_PORT: "{port}"
-  CHROMA_TELEMETRY_ENABLED: "{!disable_telemetry}"
+map: []
 
-host_network: true
+environment:
+  CHROMA_SERVER_HTTP_PORT: "!port"
+  CHROMA_TELEMETRY_ENABLED: "!not disable_telemetry"
+
+ports:
+  8000/tcp: 8000
+
+webui: "http://[HOST]:[PORT:8000]"
