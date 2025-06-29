@@ -3,14 +3,20 @@
   "version": "0.3.1",
   "slug": "chromadb",
   "description": "Vector database for LLM apps",
-  "arch": ["amd64", "aarch64"],
+  "arch": [
+    "amd64",
+    "aarch64"
+  ],
   "startup": "services",
   "boot": "auto",
   "host_network": true,
   "ports": {
     "8000/tcp": 8000
   },
-  "map": ["config:rw", "data:rw"],
+  "map": [
+    "config:rw",
+    "data:rw"
+  ],
   "options": {
     "persist_directory": "/data/chroma",
     "allow_reset": false,
@@ -21,5 +27,6 @@
     "allow_reset": "bool",
     "anonymized_telemetry": "bool"
   },
+  "image": null,
   "init": true
 }

@@ -3,8 +3,6 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-# Lägg till körskriptet till rätt plats
+# Copy run script into s6-overlay services folder
 COPY services.d /etc/services.d
-
-# Se till att run-scriptet är körbart
 RUN chmod +x /etc/services.d/chromadb/run
