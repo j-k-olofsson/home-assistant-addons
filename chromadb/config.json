@@ -27,6 +27,6 @@
     "allow_reset": "bool",
     "anonymized_telemetry": "bool"
   },
-  "image": null,
+  "image": "local/chromadb",
   "init": true
 }
