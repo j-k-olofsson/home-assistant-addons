@@ -1,7 +1,7 @@
 name: "ChromaDB"
 version: "1.0.1"
 slug: "chromadb"
-description: "Official ChromaDB image with configurable options"
+description: "Official ChromaDB image with environment config"
 startup: services
 boot: auto
 init: false
@@ -18,3 +18,7 @@ options:
 schema:
   port: int
   disable_telemetry: bool
+
+environment:
+  CHROMA_SERVER_HTTP_PORT: "!port"
+  CHROMA_TELEMETRY_ENABLED: "!not disable_telemetry"
