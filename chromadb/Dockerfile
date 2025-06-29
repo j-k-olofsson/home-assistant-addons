@@ -1,7 +1,8 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-RUN apk add --no-cache bash curl
-COPY run.sh /
-RUN chmod a+x /run.sh
-CMD [ "/run.sh" ]
+ENV LANG C.UTF-8
+
+# Copy run script into s6-overlay services folder
+COPY services.d /etc/services.d
+RUN chmod +x /etc/services.d/chromadb/run

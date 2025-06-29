@@ -1,6 +1,6 @@
 {
   "name": "ChromaDB",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "slug": "chromadb",
   "description": "Vector database for LLM apps",
   "arch": ["amd64", "aarch64"],
@@ -20,5 +20,7 @@
     "persist_directory": "str",
     "allow_reset": "bool",
     "anonymized_telemetry": "bool"
-  }
+  },
+  "image": null,
+  "init": true
 }
