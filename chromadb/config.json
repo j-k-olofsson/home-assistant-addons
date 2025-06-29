@@ -21,6 +21,10 @@
     "allow_reset": "bool",
     "anonymized_telemetry": "bool"
   },
-  "image": null,
+  "image": "local/chromadb",
+  "build_from": {
+    "amd64": "ghcr.io/home-assistant/amd64-base:3.18",
+    "aarch64": "ghcr.io/home-assistant/aarch64-base:3.18"
+  },
   "init": true
 }
