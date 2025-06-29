@@ -1,5 +1,5 @@
 name: "ChromaDB"
-version: "1.0.2"
+version: "1.0.3"
 slug: "chromadb"
 description: "Official ChromaDB image with configurable environment variables"
 startup: services
@@ -18,9 +18,6 @@ options:
 schema:
   port: int
   disable_telemetry: bool
-
-map:
-  - environment
 
 environment:
   CHROMA_SERVER_HTTP_PORT: "$port"
