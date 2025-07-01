@@ -1,5 +1,5 @@
 name: "ChromaDB"
-version: "1.0.17"
+version: "1.0.18"
 slug: "chromadb"
 description: "Self-hosted ChromaDB server for AI agents and local vector storage"
 startup: services
