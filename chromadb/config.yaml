@@ -12,7 +12,7 @@ arch:
   - amd64
   - aarch64
 image: "ghcr.io/chroma-core/chroma"
-image_tag: "0.5.5"
+image_tag: "0.5.10"
 
 options:
   port: 8000
