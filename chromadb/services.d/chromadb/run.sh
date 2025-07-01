@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bashio
+echo "run.sh executed"
 exec uvicorn chromadb.app:app \
   --workers 1 \
   --host 0.0.0.0 \
