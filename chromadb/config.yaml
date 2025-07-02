@@ -30,8 +30,9 @@ environment:
   CHROMA_TELEMETRY_ENABLED: "!not disable_telemetry"
   CHROMA_DB_DIR: "!db_dir"
 
-ports:
-  8000/tcp: 8000
+# ❌ REMOVE this to avoid conflicting port setting
+# ports:
+#   8000/tcp: 8000
 
 map:
   - config:rw
