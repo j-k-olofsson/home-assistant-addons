@@ -1,5 +1,5 @@
 name: "ChromaDB"
-version: "1.0.18"
+version: "1.0.19"
 slug: "chromadb"
 description: "Self-hosted ChromaDB server for AI agents and local vector storage"
 startup: services
@@ -12,7 +12,7 @@ arch:
   - amd64
   - aarch64
 image: "ghcr.io/chroma-core/chroma"
-image_tag: "latest"
+image_tag: "1.0.13"
 
 options:
   port: 8000
