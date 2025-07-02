@@ -11,7 +11,7 @@ echo "🌐 Listening on port: ${CHROMA_SERVER_HTTP_PORT:-8000}"
 
 exec uvicorn chromadb.app:app \
   --host 0.0.0.0 \
-  --port "${CHROMA_SERVER_HTTP_PORT:-8000}" \
+  --port 8000 \
   --log-config chromadb/log_config.yml \
   --proxy-headers \
   --timeout-keep-alive 30
